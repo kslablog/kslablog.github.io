@@ -1,5 +1,7 @@
-import React, { FunctionComponent } from 'react'
+import React, {FunctionComponent, ReactNode} from 'react'
 import { Link } from 'gatsby'
+import styled from "@emotion/styled";
+import '../../App.css'
 
 export type CategoryListProps = {
     selectedCategory: string
@@ -8,6 +10,30 @@ export type CategoryListProps = {
     }
 }
 
+type CategoryItemProps = {
+    active: boolean;
+}
+
+type GatsbyLinkProps = {
+    children: ReactNode;
+    className?: string;
+    to: string;
+} & CategoryItemProps
+
+const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
+    <Link {...props} className={name === selectedCategory?"actvieClass":""} />
+))<CategoryItemProps>`
+  margin-right: 20px;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: ${({ active }) => (active ? '800' : '400')};
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+`
+
 const CategoryList: FunctionComponent<CategoryListProps> = function ({
     selectedCategory,
     categoryList,
@@ -15,13 +41,13 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
 {
     return <>
         {Object.entries(categoryList).map(([name, count]) => (
-            <Link
+            <CategoryItem
                 to={`/?category=${name}`}
-                partiallyActive={name === selectedCategory}
+                active={name === selectedCategory}
                 key={name}
             >
                 #{name}({count})
-            </Link>
+            </CategoryItem>
         ))}
         </>
 }

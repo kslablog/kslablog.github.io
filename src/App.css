@@ -116,7 +116,9 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
+a {
+    text-decoration: none !important;
+}
 .site-head {
     padding: 36px 0;
     display: flex;
@@ -186,3 +188,14 @@ html {
     font-size: 16px;
     margin-bottom: 6px;
 }
+
+.category-tab {
+    font-family: "Pretendard", serif;
+    font-weight: 500;
+    color: black;
+}
+
+
+/*.selected-All {*/
+/*    color:red !important;*/
+/*}*/
