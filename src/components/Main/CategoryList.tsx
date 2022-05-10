@@ -21,7 +21,7 @@ type GatsbyLinkProps = {
 } & CategoryItemProps
 
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
-    <Link {...props} className={name === selectedCategory?"actvieClass":""} />
+    <Link {...props} />
 ))<CategoryItemProps>`
   margin-right: 20px;
   padding: 5px 0;
