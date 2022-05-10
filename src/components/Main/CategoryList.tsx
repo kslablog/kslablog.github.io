@@ -17,7 +17,7 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
         {Object.entries(categoryList).map(([name, count]) => (
             <Link
                 to={`/?category=${name}`}
-                active={name === selectedCategory}
+                partiallyActive={name === selectedCategory}
                 key={name}
             >
                 #{name}({count})
