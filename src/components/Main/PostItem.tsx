@@ -1,14 +1,10 @@
 import React, { FunctionComponent } from 'react'
 import { Link } from 'gatsby'
+import { PostFrontmatterType } from 'types/PostItem.types'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
-type PostItemProps = {
-    title: string
-    date: string
-    categories: string[]
-    summary: string
-    thumbnail: string
-    link: string
-}
+
+type PostItemProps = PostFrontmatterType & { link: string }
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
         title,
@@ -21,7 +17,7 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
 {
     return (
             <Link className="post-list" to={link}>
-                <img className="post-thumbnail" src={thumbnail} alt="post thumbnail img" />
+                <GatsbyImage className="post-thumbnail" image={thumbnail.childImageSharp.gatsbyImageData} alt="post thumbnail img" />
                 <div className="post-items">
                     <div className="post-title">{title}</div>
                     <div className="post-date">{date}</div>
