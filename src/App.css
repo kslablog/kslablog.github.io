@@ -282,3 +282,167 @@ a {
 /*.selected-All {*/
 /*    color:red !important;*/
 /*}*/
+
+/**********POST HEAD**********/
+
+.post-head-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 72px 0 2px;
+    color: #ffffff;
+}
+
+.prev-page-icon {
+    display: flex;
+    place-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: grey;
+}
+.icon-text {
+    font-family: "Pretendard", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    margin-left: 8px;
+}
+.head-list-wrapper {
+    display: flex;
+}
+
+.post-head-category {
+    background-color: grey;
+    color: white;
+    margin-right: 8px;
+    border-radius: 20px;
+}
+
+.post-category-text {
+    font-family: "Pretendard", serif;
+    padding: 6px 12px;
+}
+
+.post-head-date {
+    font-family: "Pretendard", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: grey;
+}
+
+.site-head-post {
+    padding: 36px 0;
+    display: flex;
+    background: url('./images/back3.jpg') no-repeat;
+    background-size: cover;
+    height: 160px;
+    justify-content: center;
+}
+
+.head-main-post {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Pretendard", serif;
+    color: white;
+}
+
+.head-main-post h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.head-main-post h5 {
+    font-weight: 400;
+    font-size: 20px;
+}
+/**********POST HEAD**********/
+
+.post-content-md {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 100px;
+    font-family: "Pretendard", serif;
+}
+
+.post-content-md  p {
+    padding: 3px 0;
+}
+
+.post-content-md h1, h2, h3 {
+    font-weight: 800;
+}
+
+.post-content-md * + h1, * + h2, * + h3 {
+    margin-top: 40px;
+}
+
+.post-content-md hr + h1, hr + h2, hr + h3 {
+    margin-top: 0;
+}
+
+.post-content-md h1 {
+    font-size: 30px;
+}
+
+.post-content-md h2 {
+    font-size: 25px;
+}
+
+.post-content-md h3 {
+    font-size: 20px;
+}
+
+.post-content-md blockquote {
+    margin: 30px 0;
+    padding: 5px 15px;
+    border-left: 2px solid #000000;
+    font-weight: 800;
+}
+
+.post-content-md ol, ul {
+    margin-left: 20px;
+    padding: 30px 0;
+}
+
+.post-content-md hr {
+    border: 1px solid #000000;
+    margin: 100px 0;
+}
+
+.post-content-md a {
+    color: #4263eb;
+    text-decoration: underline;
+}
+
+.post-content-md pre[class*='language-'] {
+    margin: 30px 0;
+    padding: 15px;
+    font-size: 15px;
+}
+.post-content-md pre[class*='language-'] ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+
+.post-content-md code[class*='language-'],
+pre[class*='language-'] {
+    tab-size: 2;
+}
+
+.post-content-md img {
+    width: 100%;
+    height: auto;
+}
