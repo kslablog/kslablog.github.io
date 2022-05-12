@@ -17,7 +17,3 @@ I
 src/components/Footer.tsx,6\a\6a1906fbef47b21e13258a3accfe644e256f3344
 T
 $src/components/Main/CategoryList.tsx,b\6\b6ad642f4203b0d019fea94f7089f88cf4735c11
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-9
-	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
