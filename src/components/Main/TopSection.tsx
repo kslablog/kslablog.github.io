@@ -21,6 +21,7 @@ const TopSection: FunctionComponent = function () {
                     <h5 className="sub-text">
                         함께 일하고, 함께 성장하기 위해 끊임없이 고민합니다.
                     </h5>
+                    <a className="recruit" href="https://recruit.kslab.co.kr/" target="_blank">RECRUIT</a>
                 </div>
             </div>
         </header>
