@@ -60,7 +60,9 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
         <>
             <TopSection/>
                 <div>
-                    <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
+                    <div className="main-category-wrapper">
+                        <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
+                    </div>
                     <div className="list">
                         <PostList selectedCategory={selectedCategory} posts={edges}/>
                     </div>

@@ -23,10 +23,9 @@ type GatsbyLinkProps = {
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
     <Link {...props} />
 ))<CategoryItemProps>`
-  margin-right: 20px;
-  padding: 5px 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: ${({ active }) => (active ? '800' : '400')};
+  color: ${({ active }) => (active ? '#333333' : '#6f6f6f')};
   cursor: pointer;
 
   &:last-of-type {
@@ -46,7 +45,7 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
                 active={name === selectedCategory}
                 key={name}
             >
-                #{name}({count})
+                # {name} {count}
             </CategoryItem>
         ))}
         </>
