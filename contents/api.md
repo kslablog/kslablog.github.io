@@ -11,8 +11,6 @@ thumbnail: './test23.png'
 ![](2222.png)
 # API 문서 자동화
 
-@이동주 
-
 ## 기술 스택
 
 - `Spring-REST-Docs` : API 검증 테스트, adoc 문서 빌드
