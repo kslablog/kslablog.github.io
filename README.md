@@ -1,18 +1,16 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="Gatsby" src="https://imagedelivery.net/jfIRjXneURbVKR0daxEchg/54415e84-b063-47c1-7588-6ff20d875900/public" width="200" />
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  한국시니어 연구소 개발 블로그입니다. <br> 환영합니다.
 </h1>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-## 🚀 Quick start
+## 🚀 Quick start 👋💅🔧🧢
 
 1.  **Create a Gatsby site.**
 

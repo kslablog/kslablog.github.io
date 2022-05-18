@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `한국시니어연구소 기술 블로그`,
+    description: `다양한 기술과 서비스 개발을 통해 요양시장을 혁신해나가고 있는, 한국시니어연구소의 기술 블로그입니다. ` ,
+    author: `super-mangomango`,
+    siteUrl: `https://super-mangomango.github.io`,
   },
   plugins: [
     {
@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -69,9 +70,23 @@ module.exports = {
               rel: 'nofollow',
             },
           },
+          `gatsby-remark-autolink-headers`,
         ],
       },
+    },{
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://super-mangomango.github.io',
+        stripQueryString: true,
+      },
     },
+    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

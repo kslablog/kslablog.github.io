@@ -4,6 +4,7 @@ import PostHead from "../components/Post/PostHead";
 import PostContent from "components/Post/PostContent";
 import Footer from "components/Footer";
 import CommentWidget from "components/Post/CommentWidget";
+import Template from "components/Common/Template";
 
 type PostTemplateProps = {
     data: {
@@ -11,12 +12,17 @@ type PostTemplateProps = {
             edges: PostPageItemType[] // 존재하지 않는 타입이므로 에러가 발생하지만 일단 작성해주세요
         }
     }
+    location: {
+        href: string
+    }
+
 }
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     data: {
         allMarkdownRemark: { edges },
     },
+    location: {href}
 }) {
     const {
         node: {
@@ -25,15 +31,20 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
                 title,
                 summary, // 나중에 사용할 예정입니다!
                 date,
-                categories
+                categories,
+                thumbnail: {
+                    childImageSharp: { gatsbyImageData },
+                    publicURL,
+                },
             },
         },
     } = edges[0]
     return <>
+        <Template title={title} description={summary} url={href} image={publicURL}>
         <PostHead date={date} categories={categories}/>
         <PostContent html={html} />
             <CommentWidget/>
-        <Footer />
+        </Template>
     </>
 }
 
@@ -54,6 +65,7 @@ export const queryMarkdownDataBySlug = graphql`
               childImageSharp {
                 gatsbyImageData
               }
+              publicURL
             }
           }
         }

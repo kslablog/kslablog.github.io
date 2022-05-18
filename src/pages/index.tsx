@@ -1,29 +1,51 @@
 import React, { FunctionComponent, useMemo } from 'react'
 import CategoryList, {CategoryListProps} from 'components/Main/CategoryList'
 import TopSection from "components/Main/TopSection";
-import Footer from "components/Footer";
 import PostList from 'components/Main/PostList'
 import { PostListItemType } from 'types/PostItem.types'
 import "../App.css"
 import { graphql } from 'gatsby'
 import queryString, { ParsedQuery } from 'query-string'
+import Template from "components/Common/Template";
+
+
 
 type IndexPageProps = {
     location: {
         search: string
     }
     data: {
+        site: {
+            siteMetadata: {
+                title: string
+                description: string
+                siteUrl: string
+            }
+        }
         allMarkdownRemark: {
             edges: PostListItemType[]
         }
+        // file: {
+        //     childImageSharp: {
+        //         gatsbyImageData: IGatsbyImageData
+        //     }
+        //     publicURL: string
+        // }
     }
 }
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
    location: { search },
-   data: {
-       allMarkdownRemark: { edges },
-   },
+    data: {
+        site: {
+            siteMetadata: {title, description, siteUrl}
+        },
+        allMarkdownRemark: {edges},
+        // file: {
+        //     childImageSharp: {gatsbyImageData},
+        //     publicURL
+        // }
+    }
 }) {
     const parsed: ParsedQuery<string> = queryString.parse(search)
     const selectedCategory: string =
@@ -57,7 +79,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     )
 
     return (
-        <>
+        <Template title={title} description={description} url={siteUrl} image={"https://imagedelivery.net/jfIRjXneURbVKR0daxEchg/47c2b31f-48ad-4d52-f37f-93a6acfbb100/public"}>
             <TopSection/>
                 <div>
                     <div className="main-category-wrapper">
@@ -67,8 +89,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
                         <PostList selectedCategory={selectedCategory} posts={edges}/>
                     </div>
                 </div>
-            <Footer/>
-        </>
+        </Template>
     )
 }
 
@@ -76,13 +97,20 @@ export default IndexPage
 
 export const getPostList = graphql`
   query getPostList {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+      }
+    }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
     ) {
       edges {
         node {
           id
-           fields {
+          fields {
             slug
           }
           frontmatter {
@@ -100,4 +128,4 @@ export const getPostList = graphql`
       }
     }
   }
-`
+`;
