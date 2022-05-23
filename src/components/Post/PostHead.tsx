@@ -10,6 +10,7 @@ type PostHeadProps = PostHeadInfoProps
 const PostHead: FunctionComponent<PostHeadProps> = function ({
      date,
      categories,
+     headimage
  }) {
     return <>
         <header className="site-head-post" >
@@ -31,7 +32,7 @@ const PostHead: FunctionComponent<PostHeadProps> = function ({
                 </div>
             </div>
         </header>
-        <PostHeadInfo date={date} categories={categories} />
+        <PostHeadInfo date={date} categories={categories} headimage={headimage} />
     </>
 }
 

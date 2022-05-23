@@ -2,6 +2,7 @@
 date: '2022-05-11'
 title: 'API 문서 자동화'
 categories: ['Web', 'documentation', 'API','TEST']
+headimage: './2222.png'
 summary: '1. 신규 API 생성 (혹은 API 문서 신규 작성)
 2. 테스팅 실시하며 `Spring-REST-Docs`로 해당 API 스펙 `.doc` 형식으로 문서화
 3. `.doc` 형식을 `restdocs-api-spec` **을 이용해** `OpenAPI3` **형식으로 컨버팅 (**`json`**,** `yaml` **모두 지원)**

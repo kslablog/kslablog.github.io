@@ -2,14 +2,14 @@ import React, { FunctionComponent } from 'react'
 import { graphql } from 'gatsby'
 import PostHead from "../components/Post/PostHead";
 import PostContent from "components/Post/PostContent";
-import Footer from "components/Footer";
 import CommentWidget from "components/Post/CommentWidget";
 import Template from "components/Common/Template";
+import Toc from "components/Post/Toc"
 
 type PostTemplateProps = {
     data: {
         allMarkdownRemark: {
-            edges: PostPageItemType[] // 존재하지 않는 타입이므로 에러가 발생하지만 일단 작성해주세요
+            edges: PostPageItemType[]
         }
     }
     location: {
@@ -33,16 +33,19 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
                 date,
                 categories,
                 thumbnail: {
-                    childImageSharp: { gatsbyImageData },
                     publicURL,
                 },
+                headimage
             },
+            tableOfContents
         },
     } = edges[0]
+    console.log(tableOfContents)
     return <>
         <Template title={title} description={summary} url={href} image={publicURL}>
-        <PostHead date={date} categories={categories}/>
+        <PostHead date={date} categories={categories} headimage={headimage}/>
         <PostContent html={html} />
+            <Toc html={tableOfContents}/>
             <CommentWidget/>
         </Template>
     </>
@@ -67,7 +70,11 @@ export const queryMarkdownDataBySlug = graphql`
               }
               publicURL
             }
+            headimage {
+              publicURL
+            }
           }
+          tableOfContents
         }
       }
     }

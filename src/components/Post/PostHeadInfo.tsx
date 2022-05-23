@@ -3,10 +3,14 @@ import React, { FunctionComponent } from 'react'
 // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import "../../App.css"
 
+
 export type PostHeadInfoProps = {
     // title: string
     date: string
     categories: string[]
+    headimage: {
+        publicURL: string
+    }
 }
 
 
@@ -15,6 +19,7 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
     // title,
     date,
     categories,
+    headimage
 }) {
     // const goBackPage = () => window.history.back()
 const CategoryList = categories.map((name)=>
@@ -26,10 +31,13 @@ const CategoryList = categories.map((name)=>
             {/*    <FontAwesomeIcon icon={faArrowLeft} />*/}
             {/*    <div className="icon-text">이전 페이지</div>*/}
             {/*</div>*/}
-            <div className="head-list-wrapper">
-                {CategoryList}
+            <img src={headimage.publicURL} alt="head-img" />
+            <div className="head-list-wrapper" >
+                <div className="post-head-category-wrapper">
+                    {CategoryList}
+                </div>
+                <div className="post-head-date">{date.substring(0,date.length-1)}</div>
             </div>
-            <div className="post-head-date">{date.substring(0,date.length-1)}</div>
         </div>
     )
 }

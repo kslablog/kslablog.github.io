@@ -325,12 +325,10 @@ a {
 /**********POST HEAD**********/
 
 .post-head-info-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     width: 1024px;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 72px 0 2px;
     color: #ffffff;
 }
@@ -351,25 +349,35 @@ a {
 }
 .head-list-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -42px;
+}
+
+.post-head-category-wrapper {
+    display: flex;
+    margin-left: 14px;
 }
 
 .post-head-category {
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: #666666;
     margin-right: 8px;
     border-radius: 20px;
 }
 
 .post-category-text {
     font-family: "Pretendard", serif;
+    font-weight: 600;
     padding: 6px 12px;
 }
 
 .post-head-date {
     font-family: "Pretendard", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
-    color: grey;
+    color: white;
+    margin-right: 14px;
 }
 
 .site-head-post {
