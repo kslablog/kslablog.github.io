@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from "react";
 import Footer from "components/Footer";
 import { Helmet } from "react-helmet";
+import Gnb from "components/Common/Gnb";
 
 
 type TemplateProps = {
@@ -42,6 +43,7 @@ const Template : FunctionComponent<TemplateProps> = function ({
                     <meta name="twitter:site" content="@사용자이름" />
                     <meta name="twitter:creator" content="@사용자이름" />
                 </Helmet>
+                <Gnb/>
                 {children}
                 <Footer/>
             </div>

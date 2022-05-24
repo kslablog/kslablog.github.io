@@ -4,7 +4,7 @@ import PostContent from "components/Post/PostContent";
 import CommentWidget from "components/Post/CommentWidget";
 import Template from "components/Common/Template";
 import Toc from "components/Post/Toc"
-import TopSection from "components/Main/TopSection";
+
 
 type PostTemplateProps = {
     data: {
@@ -44,7 +44,6 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 
     return <>
         <Template title={title} description={summary} url={href} image={publicURL} >
-            <TopSection/>
         <PostContent html={html} date={date} categories={categories} headimage={headimage} />
             <Toc html={tableOfContents}/>
             <CommentWidget/>
