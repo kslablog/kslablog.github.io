@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useMemo } from 'react'
-import "../../App.css"
+import '../../Style.scss'
 import PostItem from "components/Main/PostItem"
 import { PostListItemType } from 'types/PostItem.types'
 // export type PostType = {

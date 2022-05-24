@@ -2,6 +2,7 @@ import React, { FunctionComponent, ReactNode } from "react";
 import Footer from "components/Footer";
 import { Helmet } from "react-helmet";
 
+
 type TemplateProps = {
     title: string
     description: string

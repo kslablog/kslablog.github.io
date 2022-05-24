@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { Link } from 'gatsby'
-import "../App.css"
+import '../Style.scss'
 import notfound from "../images/notfound.jpg"
 
 

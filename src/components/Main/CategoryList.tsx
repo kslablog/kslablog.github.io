@@ -1,7 +1,7 @@
 import React, {FunctionComponent, ReactNode} from 'react'
 import { Link } from 'gatsby'
 import styled from "@emotion/styled";
-import '../../App.css'
+import '../../Style.scss'
 
 export type CategoryListProps = {
     selectedCategory: string
@@ -24,7 +24,7 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
     <Link {...props} />
 ))<CategoryItemProps>`
   font-size: 17px;
-  font-weight: ${({ active }) => (active ? '800' : '400')};
+  font-weight: ${({ active }) => (active ? '900' : '400')};
   color: ${({ active }) => (active ? '#333333' : '#6f6f6f')};
   cursor: pointer;
 

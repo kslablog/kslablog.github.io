@@ -3,7 +3,7 @@ import CategoryList, {CategoryListProps} from 'components/Main/CategoryList'
 import TopSection from "components/Main/TopSection";
 import PostList from 'components/Main/PostList'
 import { PostListItemType } from 'types/PostItem.types'
-import "../App.css"
+import '../Style.scss'
 import { graphql } from 'gatsby'
 import queryString, { ParsedQuery } from 'query-string'
 import Template from "components/Common/Template";

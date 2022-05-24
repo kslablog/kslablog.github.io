@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react'
 import { graphql } from 'gatsby'
-import PostHead from "../components/Post/PostHead";
 import PostContent from "components/Post/PostContent";
 import CommentWidget from "components/Post/CommentWidget";
 import Template from "components/Common/Template";
 import Toc from "components/Post/Toc"
+import TopSection from "components/Main/TopSection";
 
 type PostTemplateProps = {
     data: {
@@ -40,11 +40,12 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
             tableOfContents
         },
     } = edges[0]
-    console.log(tableOfContents)
+
+
     return <>
-        <Template title={title} description={summary} url={href} image={publicURL}>
-        <PostHead date={date} categories={categories} headimage={headimage}/>
-        <PostContent html={html} />
+        <Template title={title} description={summary} url={href} image={publicURL} >
+            <TopSection/>
+        <PostContent html={html} date={date} categories={categories} headimage={headimage} />
             <Toc html={tableOfContents}/>
             <CommentWidget/>
         </Template>

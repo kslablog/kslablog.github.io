@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import "../../App.css"
+import '../../Style.scss'
 
 
 export type PostHeadInfoProps = {
@@ -23,7 +23,7 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
 }) {
     // const goBackPage = () => window.history.back()
 const CategoryList = categories.map((name)=>
-    <div className="post-head-category"><div className="post-category-text">{name}</div></div>
+    <div className="post-head-category" key={name}><div className="post-category-text">{name}</div></div>
 )
     return (
         <div className="post-head-info-wrapper">

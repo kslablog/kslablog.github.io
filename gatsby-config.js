@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://super-mangomango.github.io`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
