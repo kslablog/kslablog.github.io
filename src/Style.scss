@@ -58,6 +58,7 @@
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 12px;
+  color:white;
   @include tablet {
     display: none;
   }
@@ -298,9 +299,9 @@
 
 .post-head-info {
   width: 1024px;
-  margin: 0 auto 36px auto;
-  padding-bottom: 24px;
-  border-bottom: 2px solid #f2f2f2;
+  margin: 0 auto 0 auto;
+  padding-bottom: 16px;
+  //border-bottom: 2px solid #f2f2f2;
   @include tablet {
   width: 100%;
   }
@@ -420,12 +421,14 @@
   display: flex;
   width: 1024px;
   margin:0 auto;
+  //border-top: 2px solid rgb(242, 242, 242);
+  //border-bottom: 2px solid rgb(242, 242, 242);
 }
 
 /**********POST HEAD**********/
 
 .utterances {
-  max-width:1024px !important;
+  max-width:960px !important;
   margin-top: 36px;
   margin-bottom: 96px;
 }
@@ -489,4 +492,109 @@
 
 .post-toc {
   width: 212px;
+  position: relative;
+  font-family: "Pretendard", sans-serif;
+  top:-36px;
+  margin-left: 12px;
+  @include toc {
+    display: none;
+  }
+}
+
+.post-toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.post-toc a {
+  border-radius: 6px;
+  color: var(--color-text);
+  display: block;
+  overflow: hidden;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .25s ease 0s;
+  white-space: nowrap;
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #9f9f9f;
+  :hover {
+    font-weight: 600;
+    color: black !important;
+  }
+}
+
+.post-toc > ul {
+  padding-left: 12px;
+  margin-left: 0 !important;
+  //border-left:2px solid #f1f1f1;
+  position: sticky;
+  position: -webkit-sticky;
+  top:24px;
+}
+
+aside a:hover {
+  font-weight: 600;
+  color: black !important;
+}
+
+.profile-wrapper {
+  width: 960px;
+  margin:36px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 36px 0;
+}
+
+.profile-photo {
+  max-width: 120px;
+  height: auto;
+  margin-right:32px;
+}
+
+.author-info-wrapper {
+  font-family: "Pretendard", sans-serif;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 600;
+  color:#666666;
+  margin-bottom: 12px;
+}
+
+.author-text-info {
+  font-size: 18px;
+  font-weight: 500;
+  color:#777777;
+  margin-bottom: 8px;
+}
+
+.author-text-detail{
+  font-size: 16px;
+  font-weight: 400;
+  color:#777777;
+  margin-bottom: 8px;
+}
+
+.author-link {
+  display: flex;
+  align-items: center;
+}
+
+.mailto {
+  height: 16px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.gitto {
+  height: 22px;
+  width: auto;
+  margin-right: 8px;
 }

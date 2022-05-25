@@ -5,8 +5,10 @@ import CommentWidget from "components/Post/CommentWidget";
 import Template from "components/Common/Template";
 import Toc from "components/Post/Toc"
 import PostHeadInfo from "components/Post/PostHeadInfo";
+import Profile from "components/Post/Profile";
 import "../MarkdownHtml.scss"
 import "../Style.scss"
+import {IGatsbyImageData} from "gatsby-plugin-image";
 
 
 type PostTemplateProps = {
@@ -20,6 +22,7 @@ type PostTemplateProps = {
     }
 
 }
+
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     data: {
@@ -38,12 +41,13 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
                 thumbnail: {
                     publicURL,
                 },
-                headimage
+                headimage,
+                author,
+                profile,
             },
             tableOfContents
         },
     } = edges[0]
-
 
     return <>
         <Template title={title} description={summary} url={href} image={publicURL} >
@@ -53,6 +57,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
                     <PostContent html={html} />
                     <Toc html={tableOfContents}/>
                 </div>
+                <Profile author={author} profile={profile}/>
             <CommentWidget/>
             </div>
         </Template>
@@ -81,6 +86,10 @@ export const queryMarkdownDataBySlug = graphql`
             headimage {
               publicURL
             }
+            profile {
+              publicURL
+            }
+            author
           }
           tableOfContents
         }
@@ -91,6 +100,18 @@ export const queryMarkdownDataBySlug = graphql`
 export type PostPageItemType = {
     node: {
         html: string
-        frontmatter: PostFrontmatterType
+        frontmatter: {
+            title: string
+            date: string
+            categories: string[]
+            summary: string
+            thumbnail: {
+                childImageSharp: {
+                    gatsbyImageData: IGatsbyImageData
+                }
+                publicURL: string
+            }
+            tableOfContents:string
+        }
     }
 }

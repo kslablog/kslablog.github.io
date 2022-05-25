@@ -5,7 +5,7 @@ interface  PostTocProps {
 }
 
 const Toc: FunctionComponent<PostTocProps> = function ({ html }) {
-    return <div className='post-toc' dangerouslySetInnerHTML={{ __html:html }} />
+    return <aside className='post-toc' dangerouslySetInnerHTML={{ __html:html }} />
 }
 
 export default Toc

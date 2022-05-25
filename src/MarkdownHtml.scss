@@ -28,7 +28,7 @@ table thead th+th {
   font-weight: 600;
   vertical-align: middle;
   color: #333333;
-  background-color: #e7e7e7;
+  background-color: #e8e8e8;
 }
 
 table thead th+th+th {
@@ -48,7 +48,7 @@ table thead th+th+th+th {
   font-weight: 600;
   vertical-align: middle;
   color: #333333;
-  background-color: #e7e7e7;
+  background-color: #e8e8e8;
 }
 
 table thead th+th+th+th+th {
@@ -79,21 +79,30 @@ table td {
 .post-content-md {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 960px;
   margin-right: 12px;
+  margin-left: 36px;
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 48px;
+  padding-top:48px;
   font-family: "Pretendard", serif;
-  border-bottom:1px solid #e1e1e1 ;
+  //border-bottom: 2px solid rgb(242, 242, 242);
+  border-top: 2px solid rgb(242, 242, 242);
+  //border-top: 2px solid rgb(242, 242, 242);
   @include tablet {
     width: 100%;
   }
 }
 
+.post-content-md ol, ul {
+  margin-left: 4.5% !important;
+  padding-bottom: 18px;
+}
+
 .post-content-md > * {
-  margin-left: 2% !important;
+  margin-left: 2%;
 }
 
 .post-content-md  p {
@@ -106,6 +115,28 @@ table td {
   color:#333333;
 }
 
+.post-content-md > p > strong {
+  //font-family: "Pretendard", sans-serif;
+  //font-weight: 600;
+  //font-size: 15px;
+  //color:#5f5f5f;
+  //text-align: center;
+}
+
+.post-content-md > table + p {
+  //margin: 0 auto !important;
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  color:#9f9f9f;
+}
+
+.post-content-md > p {
+  padding-bottom: 20px;
+  font-size:18px;
+  font-weight: 400;
+}
 
 .post-content-md hr + h1, hr + h2, hr + h3 {
   margin-top: 0;
@@ -123,6 +154,7 @@ table td {
 
 .post-content-md h3 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 .post-content-md blockquote {
@@ -132,12 +164,16 @@ table td {
   font-weight: 800;
 }
 
-.post-content-md ol, ul {
-  margin-left: 20px;
-  padding-bottom: 30px;
-}
+
 
 .post-content-md ul li {
+  font-family: "Pretendard", sans-serif;
+  font-size: 18px;
+  color:#333333;
+  margin-bottom: 6px;
+}
+
+.post-content-md ol li {
   font-family: "Pretendard", sans-serif;
   font-size: 18px;
   color:#333333;
@@ -181,3 +217,36 @@ table td {
   width: 100%;
   height: auto;
 }
+
+.post-content-md hr {
+  border:white;
+  margin:20px 0;
+}
+
+.post-content-md pre[class*="language-"] {
+  padding: 20px 12px;
+  line-height: 1.65;
+}
+
+.post-content-md :not(pre) > code[class*="language-"] {
+  background-color: #f1f1f1;
+  color:#333333;
+  padding:2px 8px;
+  font-size: 18px;
+}
+
+.post-content-md blockquote {
+  padding:8px 16px;
+  font-weight: 400;
+  font-size:18px;
+  border-left: 5px solid #d9d9d9;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #f4f4f4;
+}
+
+.post-content-md blockquote > p {
+  padding: 0 0 0 8px;
+}
+
+
