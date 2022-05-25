@@ -1,19 +1,17 @@
 ---
 date: '2022-05-12'
-title: 'SEO와 SSR / CSR'
+title: 'Technical SEO'
 categories: ['Web', 'SEO', 'Optimization']
 headimage: './toptest.png'
 summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
 thumbnail: './test.png'
 ---
-
-# Technical SEO
 ## **SEO의 기본 개념**
 
 - 검색엔진(웹사이트 or 페이지의 크롤링 및 순위측정)에 적합한 웹 최적화 작업을 통해, 검색 결과 타겟 웹사이트의 순위를 올리고 노출 정도를 늘려, 트래픽의 양과 질을 높이는 디지털 마케팅 전략
 - 사용자의 목표에 가장 가깝도록 사용자 중심을 지향하며, 검색 사용자에게 착안점을 두는 것부터 출발하는, 웹 서비스 이용의 첫번째 UX 단계
 
----
+
 
 ## **SEO의 필요성**
 

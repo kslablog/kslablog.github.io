@@ -9,8 +9,8 @@ summary: '1. 신규 API 생성 (혹은 API 문서 신규 작성)
 4. `Swagger-UI` 에 `OpenAPI3` 형식을 모아 빌드해서 API 문서를 완성'
 thumbnail: './test23.png'
 ---
-![](2222.png)
-# API 문서 자동화
+
+[//]: # (![]&#40;2222.png&#41;)
 
 ## 기술 스택
 

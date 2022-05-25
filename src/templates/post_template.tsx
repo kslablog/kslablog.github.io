@@ -4,6 +4,9 @@ import PostContent from "components/Post/PostContent";
 import CommentWidget from "components/Post/CommentWidget";
 import Template from "components/Common/Template";
 import Toc from "components/Post/Toc"
+import PostHeadInfo from "components/Post/PostHeadInfo";
+import "../MarkdownHtml.scss"
+import "../Style.scss"
 
 
 type PostTemplateProps = {
@@ -44,9 +47,14 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 
     return <>
         <Template title={title} description={summary} url={href} image={publicURL} >
-        <PostContent html={html} date={date} categories={categories} headimage={headimage} />
-            <Toc html={tableOfContents}/>
+            <div className="post-content-wrapper">
+                <PostHeadInfo date={date} categories={categories} title={title} headimage={headimage} />
+                <div className="post-html-wrapper">
+                    <PostContent html={html} />
+                    <Toc html={tableOfContents}/>
+                </div>
             <CommentWidget/>
+            </div>
         </Template>
     </>
 }

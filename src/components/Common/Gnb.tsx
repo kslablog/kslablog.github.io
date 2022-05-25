@@ -21,7 +21,9 @@ const Gnb: FunctionComponent = function () {
         <div className="gnb">
             <div className="gnb-wrapper">
                 <Link className="gnb-left" to="/">
-                    <img className="gnb-logo" src={Logo} alt="로고" />
+                    <div className="gnb-logo">
+                        <img src={Logo} alt="로고" />
+                    </div>
                     <span className="gnb-left-txt">
                         - Tech Blog
                     </span>

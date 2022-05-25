@@ -8,6 +8,7 @@ export type PostHeadInfoProps = {
     // title: string
     date: string
     categories: string[]
+    title: string
     headimage: {
         publicURL: string
     }
@@ -19,13 +20,15 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
     // title,
     date,
     categories,
-    headimage
+    headimage,
+    title
 }) {
     // const goBackPage = () => window.history.back()
 const CategoryList = categories.map((name)=>
     <div className="post-head-category" key={name}><div className="post-category-text">{name}</div></div>
 )
     return (
+        <div className="post-head-info">
         <div className="post-head-info-wrapper">
             {/*<div className="prev-page-icon" onClick={goBackPage}>*/}
             {/*    <FontAwesomeIcon icon={faArrowLeft} />*/}
@@ -39,6 +42,8 @@ const CategoryList = categories.map((name)=>
                 <div className="post-head-date">{date.substring(0,date.length-1)}</div>
             </div>
         </div>
+        <div className="post-head-title">{title}</div>
+</div>
     )
 }
 

@@ -4,6 +4,7 @@
 
 .gnb {
   width: 100%;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .gnb-wrapper {
@@ -27,11 +28,11 @@
 }
 
 .gnb-logo {
-  width: 128px;
+  max-width: 128px;
   height: auto;
   padding: 20px 0 16px 0;
   @include tablet {
-    width: 108px;
+    max-width: 108px;
     height: auto;
   }
 }
@@ -64,7 +65,7 @@
 
 .about {
   font-family: "Pretendard", sans-serif;
-  font-size:15.5px;
+  font-size:15px;
   color:#363741;
   margin-right: 18px;
   font-weight: 600;
@@ -72,7 +73,7 @@
 
 .youtube {
   font-family: "Pretendard", sans-serif;
-  font-size:15.5px;
+  font-size:15px;
   font-weight: 600;
   color:#363741;
   margin-right: 18px;
@@ -154,31 +155,31 @@
 }
 
 .about-m {
-  text-align: left;
+  text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size:16px;
-  font-weight: 600;
+  font-size:15px;
+  font-weight: 500;
   color:#363741;
-  padding: 20px 0 20px 6% ;
+  padding: 20px 0 20px 0 ;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .youtube-m {
-  text-align: left;
+  text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size:16px;
-  font-weight: 600;
+  font-size:15px;
+  font-weight: 500;
   color:#363741;
-  padding: 20px 0 20px 6% ;
+  padding: 20px 0 20px 0 ;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .gnb-recruit-m {
-  text-align: left;
+  text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size:16px;
-  font-weight: 600;
+  font-size:15px;
+  font-weight: 500;
   color:#363741;
-  padding: 20px 0 20px 6% ;
+  padding: 20px 0 20px 0 ;
   border-bottom: 1px solid #e8e8e8;
 }

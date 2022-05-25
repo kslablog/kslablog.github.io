@@ -1,14 +1,8 @@
 import React, { FunctionComponent } from 'react'
-import PostHeadInfo from "components/Post/PostHeadInfo";
 // import styled from '@emotion/styled'
 
 interface PostContentProps {
     html: string
-    date: string
-    categories: string[]
-    headimage: {
-        publicURL: string
-    }
 }
 
 // const MarkdownRenderer = styled.div`
@@ -21,14 +15,10 @@ interface PostContentProps {
 // `
 
 const PostContent: FunctionComponent<PostContentProps> = function ({
-    html,
-    date,
-    categories,
-    headimage,
+    html
 }) {
     return(
         <>
-            <PostHeadInfo date={date} categories={categories} headimage={headimage}/>
             <div className="post-content-md" dangerouslySetInnerHTML={{__html: html}}/>
         </>
     )
