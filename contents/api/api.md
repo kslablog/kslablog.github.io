@@ -8,6 +8,8 @@ summary: '1. 신규 API 생성 (혹은 API 문서 신규 작성)
 3. `.doc` 형식을 `restdocs-api-spec` **을 이용해** `OpenAPI3` **형식으로 컨버팅 (**`json`**,** `yaml` **모두 지원)**
 4. `Swagger-UI` 에 `OpenAPI3` 형식을 모아 빌드해서 API 문서를 완성'
 thumbnail: './test23.png'
+author: ['박재용', '안녕하세요. 한국시니어연구소 테크본부 프론트엔드 개발자 박재용입니다.', '사용자들의 사용성 개선을 위한 ux 중심의 개발을 위해 늘 고민하고 있습니다.', 'jyp@kslab.co.kr', 'github.com/super-mangomango']
+profile: './mango.png'
 ---
 
 [//]: # (![]&#40;2222.png&#41;)

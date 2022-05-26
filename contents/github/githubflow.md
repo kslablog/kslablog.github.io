@@ -5,6 +5,8 @@ categories: ['Web', 'GitHub', 'Cooperation']
 headimage: './toptest.png'
 summary: '안녕하세요. 한국시니어연구소 테크본부 프론트엔드 매니저 박재용입니다. 오늘은 한국시니어연구소의 브랜치 전략과, GitHub flow에 대해 소개하려고 합니다. 브랜치 전략은 하나의 프로젝트, 하나의 레포지토리에서 '
 thumbnail: './example.jpg'
+author: ['박재용', '안녕하세요. 한국시니어연구소 테크본부 프론트엔드 개발자 박재용입니다.', '사용자들의 사용성 개선을 위한 ux 중심의 개발을 위해 늘 고민하고 있습니다.', 'jyp@kslab.co.kr', 'github.com/super-mangomango']
+profile: './mango.png'
 ---
 
 ### 1. Help Google Bot to Find My Contents

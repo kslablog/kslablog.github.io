@@ -99,20 +99,23 @@ const AboutPage: FunctionComponent = function ({
                                     Growth
                                 </h5>
                                 <h2 className="big-title">
-                                    높은 퀄리티의 코드를 위해 <br/>
-                                    끊임없이 고민합니다.
+                                    구성원의 성장을 위해 <br/>
+                                    지원을 아끼지 않습니다.
                                 </h2>
                             </div>
                             <div className="culture-">
                                 <ul className="culture-content-wrapper-">
                                     <li className="culture-content">
-                                        한국시니어연구소 테크본부는 기술부채없는 미래지향적인 개발 문화를 만들어가고 있습니다.
+                                        서로에게 좋은 동료가 될 수 있도록, 함께 성장할 수 있는 환경을 만들기 위해 노력합니다.
                                     </li>
                                     <li className="culture-content">
-                                        데드라인에 쫓기기보다 유지보수와 협업을 위한 좋은 코드를 작성하는 것이 목표입니다.
+                                        성장에 방해받지 않도록, 좋은 장비를 제공하고, 교육 지원 제도가 마련되어있습니다.
                                     </li>
                                     <li className="culture-content">
-                                        나와 동료들의 다양한 의견을 자유롭게 제시하고, 지식과 노하우를 공유할 수 있는 코드리뷰를 통해 높은 코드 퀄리티와 구성원의 모두의 성장을 지향합니다
+                                        자율적인 스터디 문화를 통해 함께 토론하고, 공유하며 성장합니다.
+                                    </li>
+                                    <li className="culture-content">
+                                        구성원 모두가 참여할 수 있는 기술블로그를 운영하야, 우리만의 전문성을 높이는데 고민합니다.
                                     </li>
                                 </ul>
                             </div>
@@ -126,20 +129,19 @@ const AboutPage: FunctionComponent = function ({
                                     Together
                                 </h5>
                                 <h2 className="big-title">
-                                    높은 퀄리티의 코드를 위해 <br/>
-                                    끊임없이 고민합니다.
+                                    우리는 함께 일합니다
                                 </h2>
                             </div>
                             <div className="culture-">
                                 <ul className="culture-content-wrapper-">
                                     <li className="culture-content">
-                                        한국시니어연구소 테크본부는 기술부채없는 미래지향적인 개발 문화를 만들어가고 있습니다.
+                                        권위적인 리더와 수직적인 체계를 지양합니다.
                                     </li>
                                     <li className="culture-content">
-                                        데드라인에 쫓기기보다 유지보수와 협업을 위한 좋은 코드를 작성하는 것이 목표입니다.
+                                        상대적 성과를 위한 경쟁보다는, 서로가 신뢰하고 함께 성장하기위한 문화를 만들어가고 있습니다.
                                     </li>
                                     <li className="culture-content">
-                                        나와 동료들의 다양한 의견을 자유롭게 제시하고, 지식과 노하우를 공유할 수 있는 코드리뷰를 통해 높은 코드 퀄리티와 구성원의 모두의 성장을 지향합니다
+                                        구성원의 장점과 능력을 존중하고 협업하면서, 좋은 팀플레이어가 되기 위해 노력합니다.
                                     </li>
                                 </ul>
                             </div>
