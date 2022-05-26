@@ -1,0 +1,232 @@
+@import "Font.scss";
+@import "Mixin.scss";
+
+.about- {
+  width: 100%;
+  background: url('./images/backback.jpg') no-repeat center;
+}
+
+.about-content-wrapper {
+  width: 1024px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left-section {
+  margin-top: 88px;
+  font-family: "Pretendard", sans-serif;
+  display: flex;
+  margin-right: 48px;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.about-left-section-1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.about-left-section-2 {
+  color: white;
+  font-size: 54px;
+  font-weight: 700
+}
+
+.about-right-section {
+  margin-top: 128px;
+  font-family: "Pretendard", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+
+}
+
+.about-right-section-1 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+  color:white;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.about-right-section-2 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+  color:white;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.about-right-section-3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color:white;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.about-right-section-3 > h2 {
+  color: white;
+}
+
+.culture {
+  width: 100%;
+  padding: 112px 0 64px;
+}
+
+.culture-content-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard", sans-serif;
+}
+
+.culture-info-wrapper {
+  margin-bottom: 72px;
+}
+
+.culture-title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 22px;
+  color:#333333;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.culture-info {
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
+  color:#333333;
+  font-weight: 300;
+}
+
+.culture-no-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.culture-no1-title-wrapper {
+  width: 40%;
+  font-family: "Pretendard", sans-serif;
+  color: #333333;
+}
+
+.numbering {
+  font-weight: 700;
+  font-size: 18px;
+  width: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 4px;
+}
+
+.small-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.big-title {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 1.4;
+}
+
+.culture-content-wrapper- {
+  list-style: outside;
+  width: 600px;
+  font-family: "Pretendard", sans-serif;
+  color: #333333;
+  padding-bottom: 0;
+}
+
+.culture-content {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.culture- {
+  margin-top: 60px;
+}
+
+.members {
+  background-color: #f7f7f7;
+  padding-top: 112px;
+  padding-bottom: 88px;
+}
+
+.members-wrapper {
+  width: 1024px;
+  margin:0 auto;
+}
+
+.member-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+.members-list-wrapper {
+  width: 45%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-right: 4%;
+}
+
+.member {
+  max-width: 140px;
+  height: auto;
+  margin-left: 4%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-right: 4%;
+}
+
+.rank {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.member-info {
+  font-family: "Pretendard", sans-serif;
+  color:#666666;
+}
+
+.member-name-rank {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.member-position {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.member-information {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 700;
+  line-height: 1.4;
+  word-break: keep-all;
+}

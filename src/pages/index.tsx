@@ -25,12 +25,6 @@ type IndexPageProps = {
         allMarkdownRemark: {
             edges: PostListItemType[]
         }
-        // file: {
-        //     childImageSharp: {
-        //         gatsbyImageData: IGatsbyImageData
-        //     }
-        //     publicURL: string
-        // }
     }
 }
 

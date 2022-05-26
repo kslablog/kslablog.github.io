@@ -4,20 +4,10 @@ import Logo from "../../images/whitelogo.png"
 // import PostHeadInfo, { PostHeadInfoProps } from 'components/Post/PostHeadInfo'
 import '../../Style.scss'
 
-// type PostHeadProps = {
-//     // title: string
-//     date: string
-//     categories: string[]
-//     headimage: {
-//         publicURL: string
-//     }
-// }
+
 
 
 const PostHead: FunctionComponent = function ({
-     // date,
-     // categories,
-     // headimage
  }) {
     return <>
         <header className="site-head-post" >
@@ -39,7 +29,6 @@ const PostHead: FunctionComponent = function ({
                 </div>
             </div>
         </header>
-        {/*<PostHeadInfo date={date} categories={categories} headimage={headimage} />*/}
     </>
 }
 

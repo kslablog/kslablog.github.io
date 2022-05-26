@@ -29,7 +29,7 @@ const Gnb: FunctionComponent = function () {
                     </span>
                 </Link>
                 <div className="gnb-right">
-                    <Link className="about" to = "/github/githubflow/">
+                    <Link className="about" to = "/about">
                         About
                     </Link>
                     <a className="youtube" href="https://youtu.be/LMMrnutt3oc" target="_blank">
@@ -46,7 +46,7 @@ const Gnb: FunctionComponent = function () {
                 </a>
             </div>
             <div className="gnb-right-menu-mobile" style={{ maxHeight: toggleDisplay ? "200px" : "0"}} >
-                <Link className="about-m" to = "/github/githubflow/">
+                <Link className="about-m" to = "/about">
                     About
                 </Link>
                 <a className="youtube-m" href="https://youtu.be/LMMrnutt3oc" target="_blank">
