@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-import Gnb from "components/Common/Gnb";
 import CTO from "../images/profile/cto.jpg"
 import DG from"../images/profile/dg.jpg"
 import DJ from"../images/profile/dj.jpg"
@@ -12,15 +11,16 @@ import JYP from"../images/profile/jyp.jpg"
 import S from"../images/profile/s.jpg"
 import SH from"../images/profile/sh.jpg"
 import "../About.scss"
-import Footer from "components/Footer";
+import Template from "components/Common/Template";
 
 
 
-const AboutPage: FunctionComponent = function ({
 
-}) {
+const AboutPage: FunctionComponent = function () {
+
     return (
-        <><Gnb/>
+        <>
+            <Template title={"한국시니어 연구소 테크본부는 기술 블로그를 이렇게 운영합니다."} description={"한국시니어 연구소 테크본부는 기술 블로그를 이렇게 운영합니다."} url={"https://super-mangomango.github.io/about"} image={"https://imagedelivery.net/jfIRjXneURbVKR0daxEchg/47c2b31f-48ad-4d52-f37f-93a6acfbb100/public"}>
             <div className="about-wrapper">
                 <section className="about-">
                     <div className="about-content-wrapper">
@@ -349,10 +349,11 @@ const AboutPage: FunctionComponent = function ({
                         </ul>
                     </div>
                 </section>
-                <Footer/>
             </div>
+            </Template>
         </>
     )
 }
 
 export default AboutPage
+

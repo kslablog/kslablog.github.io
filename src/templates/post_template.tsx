@@ -30,6 +30,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     },
     location: {href}
 }) {
+    // @ts-ignore
     const {
         node: {
             html,
