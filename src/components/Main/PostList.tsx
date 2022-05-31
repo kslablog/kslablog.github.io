@@ -24,9 +24,9 @@ type PostListProps = {
 
 
 const PostList: FunctionComponent<PostListProps> = function ({
-        selectedCategory,
-        posts,
-    }) {
+    selectedCategory,
+    posts,
+}) {
     const postListData = useMemo(
         () =>
             posts.filter(({ node: { frontmatter: { categories } } }: PostListItemType) =>

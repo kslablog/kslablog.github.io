@@ -39,6 +39,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
                 summary, // 나중에 사용할 예정입니다!
                 date,
                 categories,
+                thumbnail,
                 thumbnail: {
                     publicURL,
                 },
@@ -53,7 +54,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     return <>
         <Template title={title} description={summary} url={href} image={publicURL} >
             <div className="post-content-wrapper">
-                <PostHeadInfo date={date} categories={categories} title={title} headimage={headimage} />
+                <PostHeadInfo date={date} categories={categories} title={title} thumbnail={thumbnail} headimage={headimage} />
                 <div className="post-html-wrapper">
                     <PostContent html={html} />
                     <Toc html={tableOfContents}/>

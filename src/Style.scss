@@ -67,6 +67,7 @@
 .head-main-text-mobile {
   display: none;
   @include tablet {
+    color:white;
     font-weight: 600;
     display: block;
     font-size:32px;
@@ -315,16 +316,7 @@
   padding-top: 36px;
   color: #ffffff;
   @include tablet {
-  }
-}
-
-.post-head-info-wrapper {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto 40px auto;
-  padding-top: 36px;
-  color: #ffffff;
-  @include tablet {
+    padding-top:0;
   }
 }
 
@@ -333,6 +325,12 @@
   font-family: "Pretendard", sans-serif;
   font-size: 36px;
   font-weight: 700;
+  @include tablet {
+    margin-left: 4%;
+    font-size:32px;
+  } @include newmobile {
+  font-size: 24px;
+      }
 }
 
 
@@ -354,13 +352,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: -42px;
+  margin-top: -42px auto 0;
+  width: 98%;
+  @include tablet {
+    margin:-34px auto 0;
+  }
 }
 
 .post-head-category-wrapper {
   display: flex;
   margin-left: 14px;
   flex-wrap: wrap;
+  @include tablet {
+    margin:4px 0 0 0;
+  }
 }
 
 .post-head-category {
@@ -368,12 +373,20 @@
   color: #666666;
   margin-right: 8px;
   border-radius: 20px;
+  @include tablet {
+    margin-right: 4px;
+  }
 }
 
 .post-category-text {
   font-family: "Pretendard", serif;
   font-weight: 600;
   padding: 6px 12px;
+  @include tablet {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 4px 8px;
+  }
 }
 
 .post-head-date {
@@ -383,7 +396,13 @@
   color: white;
   margin-right: 14px;
   @include tablet {
-    display: none;
+    font-size:16px;
+    margin:0;
+    font-weight: 400;
+  }
+  @include newmobile {
+    padding:16px 0 0;
+    font-size: 15px;
   }
 }
 
@@ -421,8 +440,22 @@
   display: flex;
   width: 1024px;
   margin:0 auto;
-  //border-top: 2px solid rgb(242, 242, 242);
-  //border-bottom: 2px solid rgb(242, 242, 242);
+  @include tablet {
+    width: 100%;
+  }
+  }
+
+.post-head-img-PC {
+  @include tablet {
+    display: none;
+  }
+}
+
+.post-head-img-mobile {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
 }
 
 /**********POST HEAD**********/
@@ -431,6 +464,11 @@
   max-width:960px !important;
   margin-top: 36px;
   margin-bottom: 96px;
+  @include tablet {
+    margin-bottom: 60px;
+    margin-top: 48px;
+    width: 88%;
+  }
 }
 
 
@@ -549,16 +587,27 @@ aside a:hover {
   justify-content: center;
   background-color: #f9f9f9;
   padding: 36px 0;
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .profile-photo {
   max-width: 120px;
   height: auto;
   margin-right:32px;
+  @include tablet {
+    margin-left: 4%;
+    max-width: 96px;
+    margin-right: 22px;
+  }
 }
 
 .author-info-wrapper {
   font-family: "Pretendard", sans-serif;
+  @include tablet {
+    margin-right: 4%;
+  }
 }
 
 .author-name {
@@ -566,6 +615,9 @@ aside a:hover {
   font-weight: 600;
   color:#666666;
   margin-bottom: 12px;
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .author-text-info {
@@ -574,6 +626,9 @@ aside a:hover {
   color:#777777;
   line-height: 1.3;
   margin-bottom: 8px;
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .author-text-detail{
@@ -581,6 +636,9 @@ aside a:hover {
   font-weight: 400;
   color:#777777;
   margin-bottom: 8px;
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .author-link {

@@ -39,11 +39,11 @@ const Gnb: FunctionComponent = function () {
                         Recruit
                     </a>
                 </div>
-                <a className="gnb-right-mobile" onClick={openToggle}>
+                <div className="gnb-right-mobile" onClick={openToggle}>
                     <span></span>
                     <span></span>
                     <span></span>
-                </a>
+                </div>
             </div>
             <div className="gnb-right-menu-mobile" style={{ maxHeight: toggleDisplay ? "200px" : "0"}} >
                 <Link className="about-m" to = "/about">

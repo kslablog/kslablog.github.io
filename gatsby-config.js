@@ -75,6 +75,7 @@ module.exports = {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               className: `anchor-header`,
+              offsetY: "100",
               maintainCase: false,
               removeAccents: true,
               elements: [`h2`, `h3`, `h4`],

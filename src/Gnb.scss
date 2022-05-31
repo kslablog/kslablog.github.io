@@ -5,6 +5,9 @@
 .gnb {
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
+  @include tablet{
+    border:none;
+  }
 }
 
 .gnb-wrapper {

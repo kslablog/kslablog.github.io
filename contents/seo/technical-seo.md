@@ -4,7 +4,7 @@ title: 'Technical SEO'
 categories: ['Web', 'SEO', 'Optimization']
 headimage: './toptest.png'
 summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
-thumbnail: './test.png'
+thumbnail: './test.jpg'
 author: ['박재용', '안녕하세요. 한국시니어연구소 테크본부 프론트엔드 개발자 박재용입니다.', '사용자들의 사용성 개선을 위한 ux 중심의 개발을 위해 늘 고민하고 있습니다.', 'jyp@kslab.co.kr', 'github.com/super-mangomango']
 profile: './mango.png'
 ---
@@ -17,13 +17,13 @@ profile: './mango.png'
 
 ## **SEO의 필요성**
 
-| 페이지 | 구글 페이지 별 트래픽 점유율 | test | test |
-| --- | --- | --- | --- |
-| 1페이지 | 91.5% | test | test |
-| 2페이지 | 4.8% | test | test |
-| 3페이지 | 1.1% | test | test |
-| 4페이지 | 0.4% | test | test |
-| 5페이지 이하 | 0.8% | test | test |
+| 페이지 | 페이지 별 트래픽 점유율 | test | test |
+| --- |---------------| --- | --- |
+| 1페이지 | 91.5%         | test | test |
+| 2페이지 | 4.8%          | test | test |
+| 3페이지 | 1.1%          | test | test |
+| 4페이지 | 0.4%          | test | test |
+| 5페이지 이하 | 0.8%          | test | test |
 
 ****( 2019, Chitika )****
 

@@ -30,16 +30,16 @@ type IndexPageProps = {
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
    location: { search },
-    data: {
-        site: {
-            siteMetadata: {title, description, siteUrl}
-        },
-        allMarkdownRemark: {edges},
-        // file: {
-        //     childImageSharp: {gatsbyImageData},
-        //     publicURL
-        // }
-    }
+   data: {
+       site: {
+           siteMetadata: {title, description, siteUrl}
+       },
+       allMarkdownRemark: {edges},
+       // file: {
+       //     childImageSharp: {gatsbyImageData},
+       //     publicURL
+       // }
+   }
 }) {
     const parsed: ParsedQuery<string> = queryString.parse(search)
     const selectedCategory: string =
@@ -75,14 +75,14 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     return (
         <Template title={title} description={description} url={siteUrl} image={"https://imagedelivery.net/jfIRjXneURbVKR0daxEchg/47c2b31f-48ad-4d52-f37f-93a6acfbb100/public"}>
             <TopSection/>
-                <div>
-                    <div className="main-category-wrapper">
-                        <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
-                    </div>
-                    <div className="list">
-                        <PostList selectedCategory={selectedCategory} posts={edges}/>
-                    </div>
+            <div>
+                <div className="main-category-wrapper">
+                    <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
                 </div>
+                <div className="list">
+                    <PostList selectedCategory={selectedCategory} posts={edges}/>
+                </div>
+            </div>
         </Template>
     )
 }

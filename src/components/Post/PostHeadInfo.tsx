@@ -9,6 +9,9 @@ export type PostHeadInfoProps = {
     date: string
     categories: string[]
     title: string
+    thumbnail:{
+        publicURL:string
+    }
     headimage: {
         publicURL: string
     }
@@ -21,7 +24,8 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
     date,
     categories,
     headimage,
-    title
+    title,
+    thumbnail
 }) {
     // const goBackPage = () => window.history.back()
 const CategoryList = categories.map((name)=>
@@ -34,7 +38,8 @@ const CategoryList = categories.map((name)=>
             {/*    <FontAwesomeIcon icon={faArrowLeft} />*/}
             {/*    <div className="icon-text">이전 페이지</div>*/}
             {/*</div>*/}
-            <img src={headimage.publicURL} alt="head-img" />
+            <img src={headimage.publicURL} alt="head-img" className="post-head-img-PC"/>
+            <img src={thumbnail.publicURL} alt="head-img" className="post-head-img-mobile"/>
             <div className="head-list-wrapper" >
                 <div className="post-head-category-wrapper">
                     {CategoryList}

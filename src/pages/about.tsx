@@ -72,7 +72,7 @@ const AboutPage: FunctionComponent = function () {
                                     Thinking
                                 </h5>
                                 <h2 className="big-title">
-                                    높은 퀄리티의 코드를 위해 <br/>
+                                    높은 퀄리티의 코드를 위해
                                     끊임없이 고민합니다.
                                 </h2>
                             </div>
@@ -99,7 +99,7 @@ const AboutPage: FunctionComponent = function () {
                                     Growth
                                 </h5>
                                 <h2 className="big-title">
-                                    구성원의 성장을 위해 <br/>
+                                    구성원의 성장을 위해
                                     지원을 아끼지 않습니다.
                                 </h2>
                             </div>
