@@ -22,7 +22,7 @@ type PostTemplateProps = {
     }
 
 }
-
+ 
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     data: {

@@ -2,9 +2,21 @@
 <p align="center">
     <img alt="Gatsby" src="https://imagedelivery.net/jfIRjXneURbVKR0daxEchg/54415e84-b063-47c1-7588-6ff20d875900/public" width="200" />
 </p>
-<h1 align="center">
-  한국시니어 연구소 개발 블로그입니다. <br> 환영합니다.
-</h1>
+<h2 align="center">
+  안녕하세요.<br>한국시니어연구소 기술 블로그입니다.
+</h2>
+<br>
+<p align="center">
+이곳은 한국시니연구소 테크본부의 이야기를 담은 블로그입니다.<br>
+한국시니여연구소 테크본부가 만들어가고 있는 새로운 서비스들의 개발 과정과,<br>
+함께 일하는 문화, 함께 성장한 경험들을 이곳에서 공유합니다.
+</p>
+
+<br>
+
+
+(본 블로그는 `gatsby-cli` 를 활용하여 만들어졌습니다.)
+<br>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
