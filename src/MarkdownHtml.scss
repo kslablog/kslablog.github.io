@@ -129,7 +129,7 @@ table td {
     border-top: 2px solid rgb(242, 242, 242);
     //border-top: 2px solid rgb(242, 242, 242);
     @include tablet {
-        width: 95%;
+        width: 88%;
         margin: 0 auto;
         padding-bottom: 0;
     }
@@ -139,7 +139,7 @@ table td {
     margin-left: 4.5% !important;
     padding-bottom: 4px;
     @include tablet {
-        padding-bottom: 24px;
+        padding-bottom: 4px;
     }
 }
 
@@ -147,9 +147,6 @@ table td {
     font-weight: 600;
 }
 
-.post-content-md > * {
-    margin-left: 2%;
-}
 
 .post-content-md p {
     word-break: break-all;
@@ -183,7 +180,7 @@ table td {
     font-weight: 400;
     @include tablet {
         font-size: 16px;
-        padding-bottom: 28px;
+        padding-bottom: 12px;
     }
 }
 
@@ -238,7 +235,7 @@ table td {
     font-weight: 800;
 }
 
-.post-content-md ul li {
+.post-content-md ol ul li {
     font-family: "Pretendard", sans-serif;
     font-size: 18px;
     color: #333333;
@@ -248,15 +245,6 @@ table td {
     }
 }
 
-.post-content-md ol li {
-    font-family: "Pretendard", sans-serif;
-    font-size: 18px;
-    color: #333333;
-    @include tablet {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-}
 
 .post-content-md ul li::marker {
     color: #333333 !important;

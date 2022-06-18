@@ -171,6 +171,9 @@ const AboutPage: FunctionComponent = function () {
                                    <p className="member-position">
                                        한국시니어연구소 테크본부 본부장 / CTO
                                    </p>
+                                   <p className="member-position-m">
+                                       한국시니어연구소 테크본부 <br/> 본부장 / CTO
+                                   </p>
                                    <p className="member-information">
                                        저는 머리가 큰 만큼 개발을 잘합니다.
                                    </p>
@@ -187,6 +190,9 @@ const AboutPage: FunctionComponent = function () {
                                     </p>
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 CDxO
+                                    </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부 <br/> CDxO
                                     </p>
                                     <p className="member-information">
                                         개발을 사랑하는 개발자
@@ -205,6 +211,10 @@ const AboutPage: FunctionComponent = function () {
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Front-end Developer
                                     </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Front-end Developer
+                                    </p>
                                     <p className="member-information">
                                         사용자들의 사용성 개선을 위한 ux 중심의 개발을 위해 늘 고민하고 있습니다.
                                     </p>
@@ -221,6 +231,10 @@ const AboutPage: FunctionComponent = function () {
                                     </p>
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Back-end Developer
+                                    </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Back-end Developer
                                     </p>
                                     <p className="member-information">
                                         졸려요
@@ -239,6 +253,10 @@ const AboutPage: FunctionComponent = function () {
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Back-end Developer
                                     </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Back-end Developer
+                                    </p>
                                     <p className="member-information">
                                         정제된 코드는 쉽게 전달된다고 생각합니다
                                     </p>
@@ -255,6 +273,10 @@ const AboutPage: FunctionComponent = function () {
                                     </p>
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Front-end Developer
+                                    </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Front-end Developer
                                     </p>
                                     <p className="member-information">
                                         저는 뺀질뺸질 거립니다.
@@ -273,6 +295,10 @@ const AboutPage: FunctionComponent = function () {
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Back-end Developer
                                     </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Back-end Developer
+                                    </p>
                                     <p className="member-information">
                                         원래 다른 사람이 보는 내가 더 진실에 가깝습니다.
                                     </p>
@@ -289,6 +315,10 @@ const AboutPage: FunctionComponent = function () {
                                     </p>
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Back-end Developer
+                                    </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Back-end Developer
                                     </p>
                                     <p className="member-information">
                                         타코는 못 참지
@@ -307,6 +337,10 @@ const AboutPage: FunctionComponent = function () {
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Front-end Developer
                                     </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Front-end Developer
+                                    </p>
                                     <p className="member-information">
                                         코딩테스트는 너무 쉬웠어요.
                                     </p>
@@ -324,6 +358,10 @@ const AboutPage: FunctionComponent = function () {
                                     <p className="member-position">
                                         한국시니어연구소 테크본부 Product Manager
                                     </p>
+                                    <p className="member-position-m">
+                                        한국시니어연구소 테크본부<br/>
+                                        Product Manager
+                                    </p>
                                     <p className="member-information">
                                         선비의 마음으로 모든 문장에 진심을 다하겠습니다.
                                     </p>
@@ -339,6 +377,9 @@ const AboutPage: FunctionComponent = function () {
                                         <p className="rank">/ Manager</p>
                                     </p>
                                     <p className="member-position">
+                                        한국시니어연구소 테크본부 QA
+                                    </p>
+                                    <p className="member-position-m">
                                         한국시니어연구소 테크본부 QA
                                     </p>
                                     <p className="member-information">

@@ -327,7 +327,7 @@
   font-weight: 700;
   margin-top: 60px;
   @include tablet {
-    margin-left: 4%;
+    margin-left: 6%;
     font-size:32px;
   } @include newmobile {
   font-size: 24px;
@@ -356,7 +356,8 @@
   margin: -42px auto 0;
   width: 98%;
   @include tablet {
-    margin:-34px auto 0;
+    margin:-40px auto 0;
+    width: 88%;
   }
 }
 
@@ -598,7 +599,7 @@ aside a:hover {
   height: auto;
   margin-right:32px;
   @include tablet {
-    margin-left: 4%;
+    margin-left: 6%;
     max-width: 96px;
     margin-right: 22px;
   }
@@ -607,7 +608,7 @@ aside a:hover {
 .author-info-wrapper {
   font-family: "Pretendard", sans-serif;
   @include tablet {
-    margin-right: 4%;
+    margin-right: 6%;
   }
 }
 
