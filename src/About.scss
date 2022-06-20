@@ -283,35 +283,35 @@
 
 
 .members-list-wrapper {
-  width: 45%;
+  width: 49%;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  padding-right: 4%;
   @include tablet {
     width:100%;
-    padding-right:0;
-    margin-bottom: 16px;
   }
 }
 
 .member {
-  max-width: 140px;
-  height: auto;
-  margin-left: 4%;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-right: 4%;
+  padding: 24px 0;
+  margin: 0 20px;
   @include mobile {
-    max-width: 112px;
-    height: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
   }
 }
+
+.member-photo {
+  width: 140px !important;
+  height: auto;
+  @include mobile {
+    width: 112px !important;
+    height: auto;
+  }
+}
+
 
 .rank {
   display: inline-block;
@@ -322,6 +322,7 @@
 .member-info {
   font-family: "Pretendard", sans-serif;
   color:#666666;
+  width: 60%;
   @include mobile {
     margin-right: 18px;
   }
