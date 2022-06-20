@@ -342,7 +342,7 @@ const AboutPage: FunctionComponent = function () {
                                         Front-end Developer
                                     </p>
                                     <p className="member-information">
-                                        코딩테스트는 너무 쉬웠어요.
+                                        더 이상 배우지 않고 쉬운 길을 택하면 기존의 방법론에서 영원히 벗어나지 못하게 될 것이다.
                                     </p>
                                 </div>
                             </li>
